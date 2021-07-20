@@ -67,7 +67,7 @@ public class TeacherController {
         return "Teacher : "+String.valueOf(count);
     }
     // delete book handler
-    @DeleteMapping("/bookme/{teacherId}")
+    @DeleteMapping("/teacher/{teacherId}")
     public ResponseEntity<Void> deleteTeacher(@PathVariable("teacherId") int teacherId) {
         try {
             this.teacherService.deleteTeacher(teacherId);
